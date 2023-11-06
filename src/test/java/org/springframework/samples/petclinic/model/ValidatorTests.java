@@ -37,9 +37,7 @@ class ValidatorTests {
 	private Validator createValidator() {
 		LocalValidatorFactoryBean localValidatorFactoryBean = new LocalValidatorFactoryBean();
 		localValidatorFactoryBean.afterPropertiesSet();
-		
 		return localValidatorFactoryBean;
-		// return 0;
 	}
 
 	@Test
