@@ -37,9 +37,11 @@ class ValidatorTests {
 	private Validator createValidator() {
 		LocalValidatorFactoryBean localValidatorFactoryBean = new LocalValidatorFactoryBean();
 		localValidatorFactoryBean.afterPropertiesSet();
+
+		System.out.println("Changed in Validation test");
 		
-		// return localValidatorFactoryBean;
-		return 0;
+		return localValidatorFactoryBean;
+		// return 0;
 	}
 
 	@Test
